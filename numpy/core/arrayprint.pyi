@@ -87,6 +87,19 @@ def array2string(
     # all arguments between `formatter` and `suffix` are de facto
     # keyworld-only arguments
     *,
+
+
+
+
+
+
+
+
+
+
+
+
+    ds
     formatter: Optional[_FormatDict] = ...,
     threshold: Optional[int] = ...,
     edgeitems: Optional[int] = ...,

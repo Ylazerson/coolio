@@ -143,6 +143,7 @@ add_newdoc_for_scalar_type('single', [],
     """
     Single-precision floating-point number type, compatible with C ``float``.
     """)
+    
 
 add_newdoc_for_scalar_type('double', ['float_'],
     """

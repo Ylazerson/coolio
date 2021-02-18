@@ -1,20 +1,3 @@
-"""
-Python 3.X compatibility tools.
-
-While this file was originally intended for Python 2 -> 3 transition,
-it is now used to create a compatibility layer between different
-minor versions of Python 3.
-
-While the active version of numpy may not support a given version of python, we
-allow downstream libraries to continue to use these shims for forward
-compatibility with numpy while they transition their code to newer versions of
-Python.
-"""
-__all__ = ['bytes', 'asbytes', 'isfileobj', 'getexception', 'strchar',
-           'unicode', 'asunicode', 'asbytes_nested', 'asunicode_nested',
-           'asstr', 'open_latin1', 'long', 'basestring', 'sixu',
-           'integer_types', 'is_pathlib_path', 'npy_load_module', 'Path',
-           'pickle', 'contextlib_nullcontext', 'os_fspath', 'os_PathLike']
 
 import sys
 import os
@@ -56,10 +39,7 @@ def isfileobj(f):
 def open_latin1(filename, mode='r'):
     return open(filename, mode=mode, encoding='iso-8859-1')
 
-def sixu(s):
-    return s
 
-strchar = 'U'
 
 def getexception():
     return sys.exc_info()[1]

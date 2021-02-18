@@ -14,21 +14,7 @@ extern NPY_NO_EXPORT PyTypeObject PyUFunc_Type;
 
 #else
 
-#if defined(PY_UFUNC_UNIQUE_SYMBOL)
-#define PyUFunc_API PY_UFUNC_UNIQUE_SYMBOL
-#endif
 
-#if defined(NO_IMPORT) || defined(NO_IMPORT_UFUNC)
-extern void **PyUFunc_API;
-#else
-#if defined(PY_UFUNC_UNIQUE_SYMBOL)
-void **PyUFunc_API;
-#else
-static void **PyUFunc_API=NULL;
-#endif
-#endif
-
-%s
 
 static NPY_INLINE int
 _import_umath(void)

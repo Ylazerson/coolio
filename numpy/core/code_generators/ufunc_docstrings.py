@@ -4220,8 +4220,3 @@ add_newdoc('numpy.core.umath', 'lcm',
     >>> np.lcm.reduce([3, 12, 20])
     60
     >>> np.lcm.reduce([40, 12, 20])
-    120
-    >>> np.lcm(np.arange(6), 20)
-    array([ 0, 20, 20, 60, 20, 20])
-
-    """)

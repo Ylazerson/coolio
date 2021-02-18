@@ -1,9 +1,4 @@
-"""
-Various richly-typed exceptions, that also help us deal with string formatting
-in python where it's easier.
 
-By putting the formatting in `__str__`, we also avoid paying the cost for
-users who silence the exceptions.
 """
 from numpy.core.overrides import set_module
 
